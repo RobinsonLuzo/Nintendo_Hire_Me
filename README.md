@@ -14,4 +14,5 @@ There are 5 files here:
 5. *convert_bytearr_to_hex.py* - standalone version of method of writing solution bytearray to text file in hexadecimal. No longer used, but left here for illustration.
 
 [NERD Hire Me source code:](https://www.nerd.nintendo.com/files/HireMe)
+
 [Live Overflow video on topic:](https://www.youtube.com/watch?v=6sHSDoJ5a1s)
