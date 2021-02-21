@@ -10,8 +10,9 @@ There are 5 files here:
 1. *hireme_problem.py* - the problem translated into Python. This has been modified from the C source to allow for the resulting string to be printed.
 2. *solution.py* - the main solver for generating candidates and verifying if any of them work.
 3. *calc_inverse_diff.py* - computes the inverse of the diffusion array using Gaussian-Jordan elimination. Helper file supplying methods to *main()* of *solution.py*.
-4. *input_arr_soultion.txt* - when a candidate is found that satisfies the requirements for outputting the target it is written as an array of hexadecimals to this file. Stripping the resulting array of string quotations '' we can then paste this into *hireme_problem.py* as *input_arr* to generate the result.
-5. *convert_bytearr_to_hex.py* - standalone version of method of writing solution bytearray to text file in hexadecimal. No longer used, but left here for illustration.
+4. *convert_bytearr_to_hex.py*- when a candidate is found that satisfies the requirements for matching the target, we can pass it into this as the variable *byte_array*. this converts it to an array of hexadecimals. Which is saved to *input_arr_soultion.txt*.
+5. *input_arr_soultion.txt* - Should contain an array of hex values. Stripping this array of string quotations '' we can then paste this into *hireme_problem.py* as *input_arr* to match the original target.
+
 
 [NERD Hire Me source code:](https://www.nerd.nintendo.com/files/HireMe)
 
