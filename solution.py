@@ -269,12 +269,6 @@ def solve(target: str):
 
         print("Solution: {}".format(result)) # suppose to be a working solution
 
-        # Convert to hex and dump it into a .txt file for use in hireme_problem.py
-        hex_arr = [hex(i) for i in result]
-
-        f = open("input_arr_solution.txt", "a")
-        f.write(repr(hex_arr)+"\n") # Don't forget to remove ''
-        f.close()
         #import binascii
         #print("Result: ", binascii.hexlify(result))
 
@@ -287,6 +281,9 @@ def solve(target: str):
 
         compress(result, test_output)
         print("Solution output: {}".format(test_output))
+
+        # Convert to hex and dump it into a .txt file for use in hireme_problem.py
+        
 
         count += 1
         if count > 1:
@@ -305,4 +302,5 @@ if __name__ == "__main__":
     # Invoke solver method using inverse_diff array
     solve("Hire me!!!!!!!!")
     #solve("Live Overflow!!!")
+
     print("--- Time taken: %s ---" % str(datetime.timedelta(seconds=time.time() - start_time)))
