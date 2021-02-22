@@ -272,6 +272,11 @@ def solve(target: str):
         #import binascii
         #print("Result: ", binascii.hexlify(result))
 
+        # Convert to hex and dump it into a .txt file for use in hireme_problem.py
+        with open('input_arr_solution.txt', 'w') as file:
+            hex_arr = [hex(i) for i in result]
+            file.write(repr(hex_arr))    # remove '' from items in resulting file.
+
         # Verify the result, it should produce the target
         test_output = bytearray(32)
         #forward_rounds(result, test_output)
@@ -281,8 +286,6 @@ def solve(target: str):
 
         compress(result, test_output)
         print("Solution output: {}".format(test_output))
-
-        # Convert to hex and dump it into a .txt file for use in hireme_problem.py
         
 
         count += 1
